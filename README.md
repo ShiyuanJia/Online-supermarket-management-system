@@ -243,6 +243,7 @@ int payOrder(LinkListC, LinkListOrder);//
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：整数(int)类型
 接口作用：支付订单
+
 void userOldOrder(LinkListC);
 接口名：add_information()
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
@@ -260,81 +261,97 @@ void managerLog();
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：管理员登陆
+
 LinkListM createManagerLink();
 接口名：createManagerLink()
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：//创建包含所有管理员信息的链表
+
 void addManager(LinkListM L)
 接口名：addManager(LinkListM L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：添加管理员
+
 void outManagerLink(LinkListM L)
 接口名：outManagerLink(LinkListM L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：输出包含所有管理员信息的链表到文档中
+
 void managerLogCheck(LinkListM L)
 接口名： managerLogCheck(LinkListM L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：管理员登陆检查
+
 void managerSystem(LinkListM L)
 接口名：managerSystem(LinkListM L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：管理员系统
+
 void manageInfoM(LinkListM L)
 接口名：manageInfoM(LinkListM L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：管理员信息
+
 void changePasswordM(LinkListM L);//
 接口名：changePasswordM(LinkListM L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：更改密码
+
 void changeEMailM(LinkListM L)
 接口名：changeEMailM(LinkListM L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：更改邮箱
+
 void manageOrderM(LinkListM)
 接口名：manageOrderM(LinkListM)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：管理所属超市的全部订单
+
 void checkOrderM(LinkListOrderM)
 接口名：checkOrderM(LinkListOrderM)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：查看管理员所属超市的所有订单
+
 void statisticsOrderM(LinkListOrderM L,LinkListCommodity L1)
 接口名：statisticsOrderM(LinkListOrderM L,LinkListCommodity L1)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：统计订单信息
+
 void sortAmount(LinkListStatistic L)
 接口名：sortAmount(LinkListStatistic L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：按销量排序
+
 void sortVolume(LinkListStatistic L)
 接口名：sortVolume(LinkListStatistic L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：按营业额排序
+
 void sortProfit(LinkListStatistic L)
 接口名：sortProfit(LinkListStatistic L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：按利润排序
+
 void printShortOrder(LinkListStatistic L)
 接口名：printShortOrder(LinkListStatistic L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
 返回值：空值
 接口作用：打印订单信息
+
 void determineComodity(LinkListCommodity L)
 接口名：determineComodity(LinkListCommodity L)
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
