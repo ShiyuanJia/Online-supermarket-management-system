@@ -255,7 +255,6 @@ void outUserNewOrder(LinkListOrder);
 返回值：空值
 接口作用：将用户的新订单添加到订单文件中
 
-
 void managerLog();
 接口名：managerLog()
 接口参数：处理全局结构数组，包含字符（char）类型和整数（int）类型；
