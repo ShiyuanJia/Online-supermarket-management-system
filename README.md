@@ -2,40 +2,40 @@
 北京邮电大学计算机实习-网上超市管理系统
 
 
-一、系统总体设计
-1.系统通用功能描述
-顾客
-登录功能：负责核对ID及密码。
-查询商品信息功能：查询商品号、商品所属超市、商品售价、商品销量、商品库存、折扣率、折后价格、折扣开始及结束时间。
-用户购买功能：输入用户ID和密码登录系统后，即可实现购物、查询订单等操作。
-商品筛选功能：包括根据商品号号查询商品；根据价格查询商品；根据折扣率查询商品；根据超市名称查询商品。
-个人信息管理功能：对用户个人信息中的邮箱、电话、密码、地址进行修改。
-取消订单功能：在未付款前取消自己的订单。
-查询购买记录功能：查询购物后的订单，查看用户曾经的购物记录。
-管理员
-登录功能：负责核对ID及密码。
-查询用户订单信息情况功能：查询管理员所在超市所有的订单信息。
-查询本超市内所有货物功能：查询本公司所有正在售卖的商品信息。
-添加新商品功能：添加新的商品，在商品发布之前可以进行修改。
-修改商品功能：在发布添加的新商品之前，管理员可以进行修改，或者取消添加。
-个人管理信息功能：允许管理员修改个人信息中的密码和邮箱。
+一、系统总体设计<br>
+1.系统通用功能描述<br>
+顾客<br>
+登录功能：负责核对ID及密码。<br>
+查询商品信息功能：查询商品号、商品所属超市、商品售价、商品销量、商品库存、折扣率、折后价格、折扣开始及结束时间。<br>
+用户购买功能：输入用户ID和密码登录系统后，即可实现购物、查询订单等操作。<br>
+商品筛选功能：包括根据商品号号查询商品；根据价格查询商品；根据折扣率查询商品；根据超市名称查询商品。<br>
+个人信息管理功能：对用户个人信息中的邮箱、电话、密码、地址进行修改。<br>
+取消订单功能：在未付款前取消自己的订单。<br>
+查询购买记录功能：查询购物后的订单，查看用户曾经的购物记录。<br>
+管理员<br>
+登录功能：负责核对ID及密码。<br>
+查询用户订单信息情况功能：查询管理员所在超市所有的订单信息。<br>
+查询本超市内所有货物功能：查询本公司所有正在售卖的商品信息。<br>
+添加新商品功能：添加新的商品，在商品发布之前可以进行修改。<br>
+修改商品功能：在发布添加的新商品之前，管理员可以进行修改，或者取消添加。<br>
+个人管理信息功能：允许管理员修改个人信息中的密码和邮箱。<br>
 
-2.接口定义规范
-本程序所有接口基本按照函数所实现的功能对应的英文或着英文简写命名，部分可能在歧义。
-以下为所有接口定义、命名和实现的功能。
-void userLog();//顾客登陆 
-void addUser(LinkListC L);//顾客注册 
-LinkListC createUserLink();//创建顾客链表，从文件中读取元素。 
-void outUserLink(LinkListC L);//录入顾客信息 
-void logCheck(LinkListC L);//登录检测 
-void userSystem(LinkListC L);//顾客系统 
-void managePerInfo(LinkListC L);// 管理员信息 
-void changeTel(LinkListC L);//更改电话号码 
-void changePassword(LinkListC L);//更改密码 
-void changeEMail(LinkListC L);//更改邮箱 
-void changeAddress(LinkListC L);//更改地址 
-void searchCommodity(LinkListC);//查询商品 
-void byCommodityName(LinkListCommodity);//根据商品名称 
+2.接口定义规范<br>
+本程序所有接口基本按照函数所实现的功能对应的英文或着英文简写命名，部分可能在歧义。<br>
+以下为所有接口定义、命名和实现的功能。<br>
+void userLog();//顾客登陆 <br>
+void addUser(LinkListC L);//顾客注册 <br>
+LinkListC createUserLink();//创建顾客链表，从文件中读取元素。 <br>
+void outUserLink(LinkListC L);//录入顾客信息 <br>
+void logCheck(LinkListC L);//登录检测 <br>
+void userSystem(LinkListC L);//顾客系统 <br>
+void managePerInfo(LinkListC L);// 管理员信息<br> 
+void changeTel(LinkListC L);//更改电话号码 <br>
+void changePassword(LinkListC L);//更改密码 <br>
+void changeEMail(LinkListC L);//更改邮箱 <br>
+void changeAddress(LinkListC L);//更改地址 <br>
+void searchCommodity(LinkListC);//查询商品 <br>
+void byCommodityName(LinkListCommodity);//根据商品名称 <br>
 void byMarketName(LinkListCommodity);//根据商店名称 
 void byDiscount(LinkListCommodity); //根据折扣价格 
 void afterSearch(LinkListCommodity,LinkListC);//顾客购买模块 
